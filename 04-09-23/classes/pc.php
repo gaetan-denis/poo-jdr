@@ -10,12 +10,23 @@ class pc extends character
 
     public string $pseudo;
 
+    //Construct//
+
+   public function __construct(int $id, string $name, string $pseudo)
+   {
+       parent::__construct($id,$name);
+       $this->pseudo=$pseudo;
+       $this->name=$pseudo;
+   }
+
     //Setter//
 
     public function setPseudo(string $pseudo) : void
     {
         $this->pseudo=$pseudo;
     }
+
+    //Getters//
 
     public function getPseudo(string $pseudo) : string
     {

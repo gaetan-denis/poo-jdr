@@ -32,7 +32,7 @@ class character
      * @param string $name
      * @param int $id
      */
-    public function __construct(string $name, int $id)
+    public function __construct(int $id, string $name)
     {
         $this->name = $name;
         $this->id = $id;
